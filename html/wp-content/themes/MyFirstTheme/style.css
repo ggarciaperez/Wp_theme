@@ -17,5 +17,35 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 body{
-    background-color: #98511a;
+    background-color: #4c4c4d;
+}
+
+#header {
+    background: url("http://localhost:8000/wp-content/themes/MyFirstTheme/assets/images/selva-wp.jpg")
+    no-repeat bottom center;
+
+    margin: 0;
+    padding: 15px 10px 15px 60px;
+}
+#headerimg  {
+    font: italic normal 230% 'Times New Roman', Times, serif;
+    margin: 7px 9px 0;
+    height: 400px;
+    width: fit-content;
+}
+#description{
+    font: italic bold 100% 'Times New Roman', Times, serif;
+    color: #6b003e;
+    margin-left: fill;
+}
+{
+    background: #90a090;
+    border-bottom: double 3px #aba;
+    border-left: solid 1px #9a9;
+    border-right: solid 1px #565;
+    border-top: solid 1px #9a9;
+    font: italic normal 230% 'Times New Roman', Times, serif;
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding: 15px 10px 15px 60px;
 }
