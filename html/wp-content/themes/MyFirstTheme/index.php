@@ -13,9 +13,10 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <h3><?php the_title(); ?></h3>
+    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
     <?php the_post_thumbnail('post-thumbnail');?>
-    <?php the_content(); ?>
+    <?php the_excerpt(); ?>
+    <!--<?php the_content(); ?>-->
     <?php wp_link_pages(); ?>
     <?php edit_post_link(); ?>
 
