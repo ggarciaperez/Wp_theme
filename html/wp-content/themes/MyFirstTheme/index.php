@@ -13,9 +13,15 @@
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
     <?php the_post_thumbnail('post-thumbnail');?>
-    <?php the_excerpt(); ?>
+    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+    <?php the_excerpt();/*
+    $excerpt = get_the_excerpt();
+
+    $excerpt = substr( $excerpt, 0, 50 ); // Only display first 50 characters of excerpt
+    $result = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
+    echo $result;*/
+    ?>
     <!--<?php the_content(); ?>-->
     <?php wp_link_pages(); ?>
     <?php edit_post_link(); ?>

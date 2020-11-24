@@ -38,6 +38,12 @@ body{
     color: #6b003e;
     margin-left: fill;
 }
+#footer {
+    .lemur {
+        max-width: 30%;
+    }
+}
+
 {
     background: #90a090;
     border-bottom: double 3px #aba;
