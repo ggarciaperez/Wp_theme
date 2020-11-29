@@ -8,8 +8,6 @@
     <?php get_header(); ?>
 </head>
 <body>
-<h1><?php bloginfo( 'name' ); ?></h1>
-<h2><?php bloginfo( 'description' ); ?></h2>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

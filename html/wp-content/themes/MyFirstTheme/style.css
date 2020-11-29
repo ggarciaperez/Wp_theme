@@ -17,26 +17,25 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 body{
-    background-color: #4c4c4d;
+    background-color: #4e4ed9;
 }
 
 #header {
-    background: url("http://localhost:8000/wp-content/themes/MyFirstTheme/assets/images/selva-wp.jpg")
+    background: url("http://localhost:8000/wp-content/themes/MyFirstTheme/assets/images/cabecera.jpg")
     no-repeat bottom center;
-
     margin: 0;
     padding: 15px 10px 15px 60px;
 }
 #headerimg  {
     font: italic normal 230% 'Times New Roman', Times, serif;
-    margin: 7px 9px 0;
     height: 400px;
-    width: fit-content;
+    width: 100%;
+    text-align: center!important;
 }
 #description{
     font: italic bold 100% 'Times New Roman', Times, serif;
-    color: #6b003e;
-    margin-left: fill;
+    color: red;
+    bottom: 0;
 }
 #footer {
     .lemur {
@@ -54,4 +53,16 @@ body{
     letter-spacing: 0.2em;
     margin: 0;
     padding: 15px 10px 15px 60px;
+}
+/*
+making links not look like original
+ */
+a {
+    text-decoration: none;
+}
+a:link, a:visited{
+    color: red;
+}
+a:hover{
+    color: orangered;
 }
