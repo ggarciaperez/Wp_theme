@@ -19,7 +19,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 body{
     background-color: #4e4ed9;
 }
-
+#footer { background-color: #4e4ed9;}
 #header {
     background: url("http://localhost:8000/wp-content/themes/MyFirstTheme/assets/images/cabecera.jpg")
     no-repeat bottom center;
@@ -37,14 +37,14 @@ body{
     color: red;
     bottom: 0;
 }
-#footer {
-    .lemur {
-        max-width: 30%;
-    }
+#site-content.main{
+     background-color: #4e4ed9;
 }
-
+#site-content.section-inner{
+    background-color: #4e4ed9;
+}
 {
-    background: #90a090;
+    background: #4e4ed9;
     border-bottom: double 3px #aba;
     border-left: solid 1px #9a9;
     border-right: solid 1px #565;
@@ -66,3 +66,7 @@ a:link, a:visited{
 a:hover{
     color: orangered;
 }
+#gridcontainer{margin: 20px 0; width: 100%}
+#gridcontainer.griditemleft{float: left;width:278px; margin: 0 40px 40px 0;}
+#gridcontainer.griditemrigth{float: left; width: 278px;}
+#gridcontainer.postimage{margin: 0 0 10px 0}

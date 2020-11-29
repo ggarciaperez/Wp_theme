@@ -1,6 +1,8 @@
-<marquee behavior="scroll" direction="left" scrollamount="10">
-    <h2>And this is the footer! <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/lemur.png" class="lemur"></h2>
-
+<!DOCTYPE html>
+<html>
+<body>
+<marquee behavior="alternate" scrollamount=20>
+    <h2>You reached the end of the line! <img src="<?php echo get_stylesheet_directory_uri();?>/assets/images/op.png"></h2>
 </marquee>
-
+</body>
 <?php

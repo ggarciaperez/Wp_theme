@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <div id="header">
+
     <div id="headerimg">
         <h1>
             <a href="<?php echo get_option('home'); ?>">

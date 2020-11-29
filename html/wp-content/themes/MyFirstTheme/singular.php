@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+<head>
 <?php
 /**
  * The template for displaying single posts and pages.
@@ -11,9 +14,9 @@
 
 get_header();
 ?>
-
+</head>
+<body>
 <main id="site-content" role="main">
-    <h3>Posts independientes</h3>
 	<?php the_content();?>
 
 </main><!-- #site-content -->
@@ -21,3 +24,5 @@ get_header();
 
 
 <?php get_footer(); ?>
+</body>
+</html>
