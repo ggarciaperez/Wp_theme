@@ -67,6 +67,6 @@ a:hover{
     color: orangered;
 }
 #gridcontainer{margin: 20px 0; width: 100%}
-#gridcontainer .griditemleft{float: left; width:278px; margin: 0 40px 40px 0;}
-#gridcontainer .griditemrigth{float: left; width: 278px;}
+#gridcontainer .griditemleft{float: left; width:40%; margin: 0 40px 40px 0;}
+#gridcontainer .griditemrigth{float: left; width: 40%;}
 #gridcontainer .postimage{margin: 0 0 10px 0;}
