@@ -8,12 +8,13 @@
     <?php get_header(); ?>
 </head>
 <body>
+<?php //get_sidebar(); ?>
 <div id="gridcontainer">
     <?php
     $counter =1; //starts counter
     $grids =2; //Grids per row
     global $query_string; //needed for pagination
-    query_posts($query_string.'&caller_get_posts=1&posts_per_page=6');
+    query_posts($query_string.'&caller_get_posts=1&posts_per_page=12');
     ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <?php
@@ -41,35 +42,25 @@
     <?php $counter=0;
     endif;?>
 
-        <!--<?php the_post_thumbnail('post-thumbnail');?>-->
-    <!--<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>-->
-    <!--<?php the_excerpt();/*
-    $excerpt = get_the_excerpt();
-
-    $excerpt = substr( $excerpt, 0, 50 ); // Only display first 50 characters of excerpt
-    $result = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
-    echo $result;*/
-    ?>-->
-    <!--<?php the_content(); ?>-->
     <?php wp_link_pages(); ?>
     <?php edit_post_link(); ?>
 
 <?php $counter++; endwhile; ?>
 
-    <!--<?php
+    <?php
     if ( get_next_posts_link() ) {
         next_posts_link();
     }
-    ?>-->
-    <!--<?php
+    ?>
+    <?php
     if ( get_previous_posts_link() ) {
         previous_posts_link();
     }
-    ?>-->
+    ?>
 
-    <!--<?php else: ?>-->
+    <?php else: ?>
 
-    <!--<p>No posts found. :(</p>-->
+    <p>No posts found. :(</p>
 
 <?php endif; ?>
 </div>
